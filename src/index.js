@@ -29,4 +29,4 @@ app.get('/v1/geocode', async (request, response) => {
     }
 });
 
-exports.handler = async (event, context, callback) => await app.serve(event, context, callback);
+exports.handler = async (event, context, callback) => app.serve(event, context, callback);
